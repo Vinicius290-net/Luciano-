@@ -1,0 +1,9 @@
+REDGRAM+ — Site institucional
+
+Como visualizar:
+1. Extraia o arquivo ZIP.
+2. Abra a pasta redgram_site.
+3. Toque/clique em index.html para abrir no navegador.
+
+O site é responsivo e inclui a logo e o cartaz enviados. Os botões de contato abrem o WhatsApp ou o e-mail.
+Para publicar na internet, envie a pasta inteira para um serviço de hospedagem de sites estáticos.

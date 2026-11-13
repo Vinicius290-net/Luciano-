@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="REDGRAM+ — Curso de Redação e Gramática. Desenvolva sua escrita e prepare-se para o ENEM e a UEMA com acompanhamento individualizado.">
+  <meta name="theme-color" content="#071d50">
+  <title>REDGRAM+ | Curso de Redação e Gramática</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#071d50;--blue:#103b78;--green:#267d24;--gold:#e8b526;--ink:#14213a;--muted:#617087;--paper:#f6f8fc}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff}
+    a{color:inherit;text-decoration:none}.container{width:min(1140px,calc(100% - 40px));margin:auto}
+    header{background:rgba(7,29,80,.97);color:white;position:sticky;top:0;z-index:10;box-shadow:0 5px 22px #06183a22}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.4px}.brand img{width:62px;height:62px;object-fit:contain;background:white;border-radius:50%;padding:4px}.brand span{font-size:18px;line-height:1.1}.brand small{display:block;font-size:10px;font-weight:500;letter-spacing:1.3px;color:#d9e5fa;margin-top:4px}
+    nav{display:flex;gap:26px;align-items:center;font-size:14px;font-weight:600}nav a{opacity:.9}nav a:hover{color:#f4c638}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 21px;border-radius:999px;background:var(--gold);color:#10234c;font-weight:800;border:0;transition:.2s;cursor:pointer}.btn:hover{transform:translateY(-2px);filter:brightness(1.04)}.btn-outline{background:transparent;color:white;border:1px solid #ffffff70;padding:11px 18px}
+    .hero{background:radial-gradient(circle at 80% 20%,#174d88 0,#0a2b65 35%,#061943 76%);color:white;overflow:hidden;position:relative;padding:76px 0 82px}
+    .hero:before{content:"";position:absolute;width:520px;height:520px;border:1px solid #ffffff18;border-radius:50%;right:-130px;top:-180px;box-shadow:0 0 0 40px #ffffff08,0 0 0 90px #ffffff05}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center;position:relative}
+    .eyebrow{color:#f5c735;text-transform:uppercase;font-size:12px;font-weight:800;letter-spacing:2px}
+    h1{font-family:"Playfair Display",serif;font-size:clamp(42px,5vw,64px);line-height:1.05;margin:17px 0 20px;max-width:650px}
+    h1 em{color:#f4c52f;font-style:normal} .hero p{font-size:18px;line-height:1.7;color:#dce7f7;max-width:590px;margin:0 0 28px}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap}.hero-note{font-size:12px!important;color:#b9c9e1!important;margin-top:20px!important}
+    .hero-card{background:white;border-radius:24px;padding:15px;box-shadow:0 24px 65px #0005;transform:rotate(1deg)}.hero-card img{width:100%;display:block;border-radius:15px}
+    .section{padding:78px 0}.section.soft{background:var(--paper)}.section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+    .kicker{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--green);font-weight:800}
+    h2{font-family:"Playfair Display",serif;font-size:clamp(30px,4vw,43px);line-height:1.15;margin:12px 0;color:var(--navy)}
+    .section-head p{color:var(--muted);line-height:1.7;margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+    .about-copy p{color:var(--muted);line-height:1.85;font-size:16px}.about-copy strong{color:var(--navy)}
+    .feature-list{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:26px}
+    .feature{background:white;border:1px solid #e7ecf4;border-radius:15px;padding:17px}.feature b{display:block;color:var(--navy);margin-bottom:6px}.feature span{font-size:13px;color:var(--muted);line-height:1.5}
+    .quote-box{background:linear-gradient(145deg,#09265d,#0d4174);border-radius:22px;padding:34px;color:white;position:relative;overflow:hidden}
+    .quote-box:after{content:"“";position:absolute;right:20px;top:-30px;font:180px Georgia;color:#ffffff12}
+    .quote-box h3{font:700 27px "Playfair Display",serif;margin:0 0 15px;max-width:420px}.quote-box p{color:#d7e5f6;line-height:1.7}
+    .quote-box .signature{color:#f3c432;font-weight:800;margin-top:24px}
+    .pricing{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:850px;margin:auto}
+    .price-card{border:1px solid #e2e8f1;border-radius:20px;padding:30px;background:white;box-shadow:0 10px 30px #102d5710;position:relative}
+    .price-card.featured{border:2px solid var(--green)}.tag{display:inline-block;background:#e9f5e8;color:#247322;padding:6px 10px;border-radius:30px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.7px}
+    .price-card h3{font-size:21px;color:var(--navy);margin:17px 0 7px}.price-card p{color:var(--muted);font-size:14px;line-height:1.6;min-height:44px}
+    .price{font-size:38px;font-weight:800;color:var(--green);margin:20px 0 5px}.price small{font-size:14px;color:var(--muted);font-weight:500}.detail{font-size:13px;color:var(--muted)}
+    .price-card .btn{width:100%;margin-top:24px;background:var(--navy);color:white}.price-card.featured .btn{background:var(--green)}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:white;border-radius:17px;padding:25px;border:1px solid #e7ecf4}.number{width:40px;height:40px;border-radius:12px;background:#eaf1fc;color:var(--blue);display:grid;place-items:center;font-weight:800}.step h3{color:var(--navy);font-size:17px;margin:18px 0 8px}.step p{color:var(--muted);font-size:14px;line-height:1.65;margin:0}
+    .contact{background:var(--navy);color:white;padding:70px 0}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.contact h2{color:white}.contact p{color:#d2def0;line-height:1.7}.contact-list{display:grid;gap:14px;margin-top:25px}.contact-item{display:flex;gap:13px;align-items:flex-start}.contact-item .icon{width:38px;height:38px;border-radius:12px;background:#ffffff15;display:grid;place-items:center;flex:none}.contact-item b{display:block;font-size:14px;margin-bottom:3px}.contact-item span{color:#d2def0;font-size:14px;line-height:1.5}
+    .contact-panel{background:#fff;color:var(--ink);border-radius:20px;padding:28px}.contact-panel h3{margin:0 0 8px;color:var(--navy)}.contact-panel p{color:var(--muted);font-size:14px}.contact-panel .btn{width:100%;background:#1c9b50;color:white;margin-top:10px}
+    footer{background:#041333;color:#b8c6dd;padding:22px 0;font-size:12px}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:850px){nav{gap:14px}nav a:not(.btn){display:none}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:55px 0}.hero-card{max-width:470px;margin:auto}.about-grid{gap:28px}.steps{grid-template-columns:1fr}.contact-grid{gap:28px}}
+    @media(max-width:560px){.container{width:min(100% - 28px,1140px)}.nav{height:72px}.brand img{width:52px;height:52px}.brand span{font-size:15px}.nav>.btn{font-size:12px;padding:11px 13px}.hero p{font-size:16px}.section{padding:58px 0}.feature-list,.pricing{grid-template-columns:1fr}.price-card p{min-height:0}.hero-actions .btn{width:100%}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#inicio"><img src="assets/logo-redgram.png" alt="Logo REDGRAM+"><span>REDGRAM+<small>CURSO DE REDAÇÃO E GRAMÁTICA</small></span></a>
+    <nav><a href="#sobre">O curso</a><a href="#metodo">Metodologia</a><a href="#valores">Valores</a><a href="#contato">Contato</a></nav>
+    <a class="btn" href="https://wa.me/5598984560444?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20REDGRAM%2B." target="_blank" rel="noopener">Fale conosco ↗</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Redação • Gramática • Aprovação</div>
+      <h1>Sua escrita mais forte. <em>Seu futuro mais perto.</em></h1>
+      <p>Prepare-se para o ENEM, a UEMA e outros processos seletivos com orientação, prática e acompanhamento individualizado.</p>
+      <div class="hero-actions">
+        <a class="btn" href="https://wa.me/5598984560444?text=Olá!%20Tenho%20interesse%20no%20curso%20REDGRAM%2B." target="_blank" rel="noopener">Quero conhecer o curso ↗</a>
+        <a class="btn btn-outline" href="#valores">Ver modalidades e valores</a>
+      </div>
+      <p class="hero-note">Junte-se aos bons e fique melhor!</p>
+    </div>
+    <div class="hero-card"><img src="assets/divulgacao-redgram.jpg" alt="Cartaz de divulgação do curso de redação REDGRAM+"></div>
+  </div>
+</section>
+
+<section class="section" id="sobre">
+  <div class="container about-grid">
+    <div class="about-copy">
+      <div class="kicker">Sobre o REDGRAM+</div>
+      <h2>Aprenda a escrever com confiança e estratégia.</h2>
+      <p>O <strong>REDGRAM+</strong> propõe um curso de redação nas modalidades presencial e virtual, destinado a estudantes que desejam desenvolver suas habilidades de escrita, aprimorar a argumentação e conquistar melhores resultados na redação do ENEM e de outros processos seletivos.</p>
+      <p>O trabalho é direcionado às necessidades de cada estudante, valorizando a evolução contínua, a prática e a orientação próxima.</p>
+      <div class="feature-list">
+        <div class="feature"><b>✍️ Escrita e repertório</b><span>Amplie seu repertório sociocultural e aprenda a usá-lo com pertinência.</span></div>
+        <div class="feature"><b>🎯 Argumentação</b><span>Construa argumentos claros, consistentes e bem desenvolvidos.</span></div>
+        <div class="feature"><b>📚 ENEM e UEMA</b><span>Prepare-se para as exigências de diferentes processos seletivos.</span></div>
+        <div class="feature"><b>🤝 Acompanhamento</b><span>Receba orientações para reconhecer avanços e melhorar.</span></div>
+      </div>
+    </div>
+    <div class="quote-box">
+      <div class="eyebrow">Nosso compromisso</div>
+      <h3>Mais que aprender a escrever: desenvolver sua voz e suas ideias.</h3>
+      <p>O curso oferece monitorias, correções detalhadas e orientações sobre repertório sociocultural, construção de argumentos e desenvolvimento das cinco competências avaliadas pelo ENEM, além dos critérios da UEMA.</p>
+      <div class="signature">REDGRAM+ — Junte-se aos bons e fique melhor!</div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="metodo">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Como funciona</div><h2>Orientação para evoluir a cada redação.</h2><p>Um processo de aprendizagem que combina prática, feedback e atenção individual.</p></div>
+    <div class="steps">
+      <article class="step"><div class="number">01</div><h3>Monitoria individual</h3><p>Aula online de 50 minutos, com orientação direcionada às necessidades do estudante e espaço para tirar dúvidas.</p></article>
+      <article class="step"><div class="number">02</div><h3>Correção comentada</h3><p>Correção detalhada da redação, com comentários e sugestões para fortalecer a escrita e a argumentação.</p></article>
+      <article class="step"><div class="number">03</div><h3>Desenvolvimento contínuo</h3><p>Orientações sobre repertório, estrutura textual e competências avaliadas nas provas do ENEM e da UEMA.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="valores">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Modalidades e valores</div><h2>Escolha a opção ideal para sua preparação.</h2><p>Entre em contato para tirar dúvidas e consultar disponibilidade de horários.</p></div>
+    <div class="pricing">
+      <article class="price-card featured"><span class="tag">Acompanhamento mensal</span><h3>Monitoria individual</h3><p>Aula online de 50 minutos, com acompanhamento individualizado.</p><div class="price">R$ 150,00 <small>/ mensal</small></div><div class="detail">1 dia por semana</div><a class="btn" href="https://wa.me/5598984560444?text=Olá!%20Quero%20informações%20sobre%20a%20monitoria%20individual." target="_blank" rel="noopener">Tenho interesse ↗</a></article>
+      <article class="price-card"><span class="tag">Serviço avulso</span><h3>Correção avulsa</h3><p>Correção comentada de uma redação, com observações para orientar sua evolução.</p><div class="price">R$ 30,00</div><div class="detail">Por redação</div><a class="btn" href="https://wa.me/5598984560444?text=Olá!%20Quero%20solicitar%20uma%20correção%20avulsa." target="_blank" rel="noopener">Solicitar correção ↗</a></article>
+    </div>
+    <p style="text-align:center;color:#617087;font-size:12px;margin-top:22px">Consulte a instituição para informações sobre a modalidade presencial e a modalidade virtual.</p>
+  </div>
+</section>
+
+<section class="contact" id="contato">
+  <div class="container contact-grid">
+    <div>
+      <div class="eyebrow">Estamos à disposição</div><h2>Comece hoje a construir sua melhor redação.</h2>
+      <p>Fale com o REDGRAM+ para saber mais sobre as aulas, valores, horários e formas de acompanhamento.</p>
+      <div class="contact-list">
+        <div class="contact-item"><div class="icon">✉</div><div><b>E-mail</b><span><a href="mailto:redgramais@gmail.com">redgramais@gmail.com</a></span></div></div>
+        <div class="contact-item"><div class="icon">☎</div><div><b>Celular / WhatsApp</b><span><a href="tel:+5598984560444">(98) 98456-0444</a></span></div></div>
+        <div class="contact-item"><div class="icon">⌖</div><div><b>Endereço</b><span>Escola José de Anchieta<br>Rua Tiradentes, 313, Centro<br>Pinheiro – MA</span></div></div>
+      </div>
+    </div>
+    <div class="contact-panel"><h3>Vamos conversar?</h3><p>Envie uma mensagem pelo WhatsApp e informe que deseja conhecer o curso REDGRAM+.</p><a class="btn" href="https://wa.me/5598984560444?text=Olá!%20Vim%20pelo%20site%20do%20REDGRAM%2B%20e%20gostaria%20de%20mais%20informações." target="_blank" rel="noopener">Chamar no WhatsApp ↗</a><p style="margin:18px 0 0;font-size:12px">Também atendemos pelo e-mail redgramais@gmail.com.</p></div>
+  </div>
+</section>
+</main>
+<footer><div class="container footer-row"><span>© <span id="year"></span> REDGRAM+ — Curso de Redação e Gramática.</span><span>Junte-se aos bons e fique melhor!</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
